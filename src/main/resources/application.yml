@@ -1,0 +1,20 @@
+server:
+  servlet:
+    context-path: /rest/v1
+
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    password: password
+    url: jdbc:h2:mem:testdb
+    username: sa
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+
+stripe:
+  secret-key: sk_test_51J1E9yLmN8KNBbpxSzP4mjxIK17bf1VIznJNG0eERegLJv9JoHEvQU410URp4SpGm8F0lRL6bqCWukwtbtrxxPHk0008FOjrFD
+
