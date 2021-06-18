@@ -1,0 +1,19 @@
+package com.menus.checkout.dto;
+
+import lombok.Data;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+
+@Data
+public class CartItemDto implements Serializable {
+
+    private Integer quantity;
+
+    private BigDecimal unitPrice;
+
+    private BigDecimal totalPrice;
+
+    private ProductDto product;
+
+}
